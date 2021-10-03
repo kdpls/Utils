@@ -1,0 +1,13 @@
+---
+name: Utils
+version: 1.0.0
+author: KygekDev
+api: 3.0.0
+main: KygekDev\Utils\Utils
+
+permissions:
+  utils.diskusage:
+    default: op
+  utils.memoryusage:
+    default: op
+...
