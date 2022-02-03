@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace KygekDev\Utils\utils;
 
 use pocketmine\command\CommandSender;
-use pocketmine\command\PluginCommand;
+use pocketmine\command\Command;
 use pocketmine\plugin\Plugin;
 use pocketmine\utils\TextFormat as TF;
 
-class MemoryUsage extends PluginCommand {
+class MemoryUsage extends Command {
 
     public function __construct(string $name, Plugin $owner) {
-        parent::__construct($name, $owner);
+        parent::__construct($name);
 
         $this->setDescription("Get server memory usage (in MiB)");
         $this->setPermission("utils.memoryusage");

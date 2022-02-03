@@ -10,7 +10,7 @@ use pocketmine\plugin\PluginBase;
 
 class Utils extends PluginBase {
 
-    public function onEnable() {
+    protected function onEnable() : void {
         $this->getServer()->getCommandMap()->registerAll("Utils", [
             new DiskUsage("diskusage", $this),
             new MemoryUsage("memoryusage", $this)

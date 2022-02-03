@@ -2,7 +2,7 @@
 name: Utils
 version: 1.0.0
 author: KygekDev
-api: 3.0.0
+api: 4.0.0
 main: KygekDev\Utils\Utils
 
 permissions:
